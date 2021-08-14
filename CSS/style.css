@@ -68,6 +68,31 @@ nav ul li a:hover{
   color: #161616;
 }
 
+nav ul li ul.gallery_nav{
+  display: none;
+  z-index: 1;
+}
+
+nav ul li:hover ul.gallery_nav{
+  display: block;
+  position: absolute;
+  background-color: #161616;
+  margin-left: -30px;
+}
+
+nav ul li:hover ul.gallery_nav li{
+  width: 250px;
+  padding: 10px;
+  border-bottom: 1px dotted #C11B17;
+  background: transparent;
+  border-radius: 0;
+  margin-left: -40px;
+}
+
+nav ul li a:hover ul.gallery_nav li:last-child{
+  border-bottom: none;
+}
+
 .college{
   color:#C11B17;
   font-weight: 500;
@@ -203,6 +228,35 @@ section.info .wrapper .cards img{
 .cards dd{
   text-align: center;
   padding-right: 2.5rem;
+}
+
+#video{
+  max-width: 1152px;
+  padding:1rem 0 2rem 0;
+  margin: 0 auto 4rem auto;
+  background-color: #161616;
+}
+
+#vid-heading{
+  text-align: center;
+}
+
+#vid-heading h1{
+  color: #C11B17;
+  font-size: 100px;
+  line-height: 1em;
+  margin-bottom: -10px;
+  margin-top: -4px;
+}
+
+
+#vid-heading p{
+  color: #FFFFFF;
+}
+
+#vid-main{
+  padding: 2rem 0 0 0;
+  text-align: center;
 }
 
 footer{
